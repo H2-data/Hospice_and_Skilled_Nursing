@@ -1,6 +1,9 @@
 -- Active: 1780043201174@@127.0.0.1@3306@hos_snf
 DROP VIEW v_hos_enrollment_state_growth;
 
+-- What if there WERE nulls? What would I do in that situation? Just kinda, leave them in? Turn them into zeros?
+-- I can't put in 'incomplete data' because Im pretty sure it would screw up my data type and calculations later.
+
 CREATE VIEW v_hos_enrollment_state_growth AS
 SELECT
 	`ENROLLMENT STATE`,
