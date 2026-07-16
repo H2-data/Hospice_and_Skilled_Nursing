@@ -2,7 +2,8 @@
 DROP VIEW v_hos_enrollment_state_growth;
 
 -- What if there WERE nulls? What would I do in that situation? Just kinda, leave them in? Turn them into zeros?
--- I can't put in 'incomplete data' because Im pretty sure it would screw up my data type and calculations later.
+-- ANSWER: If there are nulls that cant be properly managed by COALESCE, filter them out following caluclation with a WHERE clause.
+-- Change to CTE + calculation expression.
 
 CREATE VIEW v_hos_enrollment_state_growth AS
 SELECT
