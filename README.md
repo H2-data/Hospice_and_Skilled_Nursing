@@ -24,7 +24,9 @@ The data for this project was obtained from the following sources:
 
 [Data Source](https://data.cms.gov/provider-data/dataset/4pq5-n9py) (SNF)
 
-[Datasets]
+[Dataset]() (Hospice)
+
+[Dataset](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/blob/main/NH_ProviderInfo_May2026.csv) (SNF)
 
 - A **publicly available** dataset containing state by state population data. It was scraped from a Wikipedia page regarding demographics.
 
