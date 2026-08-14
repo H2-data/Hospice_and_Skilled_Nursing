@@ -130,34 +130,31 @@ ___
 My approach is to create a ratio in DAX that compares the number of facilities to the number of enrollments in each state. If the number is high, that means there's a large disparity between the two. 
 
 ```DAX
-p100k Hospice = 
-DIVIDE(
-    [#Hospice],
-    SUM(population[TOT BENES])
-) * 100000
+#SNF_enrollments = 
+COUNT('snf_enrollments'[ENROLLMENT STATE])
+
+SNF_enroll/facility_rate = 
+DIVIDE([#SNF_enrollments], [#SNF_facilities], BLANK())
 ```
 
-<img width="322" height="247" alt="image" src="https://github.com/user-attachments/assets/42344931-8df4-4834-895b-233db76154ce" />
-<br>
-I chose to use Medicare beneficiaries instead of the general population for this ratio because Medicare beneficiaries are a more likely demographic to have demand for HCFs and SNFs.
-
+Using this simple ratio, I can visualize demand for facilities and pinpoint specific states.
 ___
 
 ## **Results and Observations:**
 
-- Despite there being millions of Medicare beneficiaries per state, there's only about 20,000 total SNFs and HCFs in the US as of October 2025.
+- Despite there being millions of Medicare beneficiaries per state, there's only about 20,000 total SNFs and HCFs in the US during 2025.
 
 - Approximately 75% of SNFs and HCFs are For-Profit establishments.
-
-<div align="center">
-    <img width="851" height="281" alt="image" src="https://github.com/user-attachments/assets/5d2aa264-f1f7-4a80-8d00-fc46158940c7" />
-</div>
-<br>
 
 - Approximately 80-90% of SNFs and HCFs are either Corporations or LLCs.
 
 <div align="center">
-    <img width="850" height="278" alt="image" src="https://github.com/user-attachments/assets/2abc6ad3-4737-4192-8ae2-8c48806f782c" />
+    <img width="697" height="172" alt="Screenshot 2026-08-14 114730" src="https://github.com/user-attachments/assets/c4020283-bc66-4b4b-adb3-f3a879de84a7" />
+</div>
+<br>
+
+<div align="center">
+    <img width="700" height="175" alt="Screenshot 2026-08-14 114745" src="https://github.com/user-attachments/assets/2e9c3557-afa5-43fc-9445-05c2f735ef3e" />
 </div>
 <br>
 
