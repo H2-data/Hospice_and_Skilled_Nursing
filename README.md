@@ -16,7 +16,7 @@ The data for this project was obtained from the following sources:
 
 [Data Source](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/tree/main/Hospice) (Hospice)
 
-[Data Source (SNF)]
+[Data Source](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/tree/main/SNF) (SNF)
 
 - A **publicly available** dataset containing state by state population data. It was scraped from a Wikipedia page regarding demographics.
 
