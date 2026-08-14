@@ -91,9 +91,9 @@ I will translate these business questions into more specific data questions:
 
 <table>
   <tr>
-    <img width="1282" height="717" alt="Screenshot 2026-07-05 142825" src="https://github.com/user-attachments/assets/b22c4592-9e6a-4d3d-bc34-e786b3e3ef5f" />
+    <img width="1160" height="652" alt="Screenshot 2026-08-14 132703" src="https://github.com/user-attachments/assets/849e4f9f-3745-400f-8801-e39f5cbcb228" />
     <br>
-    <img width="1282" height="717" alt="Screenshot 2026-07-05 142858" src="https://github.com/user-attachments/assets/0dae62cb-d311-4d24-860c-2da05f2f8f66" />
+    <img width="1162" height="652" alt="Screenshot 2026-08-14 132722" src="https://github.com/user-attachments/assets/6ba8bd72-cc17-4f1d-bdd0-e0c2b74dc9a3" />
   </tr>
 </table>
 
