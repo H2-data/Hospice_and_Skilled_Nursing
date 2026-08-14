@@ -14,13 +14,9 @@ The data for this project was obtained from the following sources:
 
 - 16 **publicly available** datasets containing Hospice Care Facility Quarterly Enrollment records and Skilled Nursing Facility Monthly Enrollment records for 2025. It was obtained from the US Data.gov.
 
-[Data Source (Hospice)]
-
-[Dataset]
+[Data Source](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/tree/main/Hospice) (Hospice)
 
 [Data Source (SNF)]
-
-[Dataset]
 
 - A **publicly available** dataset containing state by state population data. It was scraped from a Wikipedia page regarding demographics.
 
