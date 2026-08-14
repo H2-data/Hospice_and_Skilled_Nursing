@@ -22,7 +22,7 @@ The data for this project was obtained from the following sources:
 
 [Data Source](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population)
 
-[Dataset][]
+[Dataset](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/blob/main/population%20data.csv)
 
 - A **publicly available** dataset containing Medicare Beneficiary enrollment information from 2013 to 2025. It was created by the Centers for Medicare and Medicaid Services (CMS).
 
