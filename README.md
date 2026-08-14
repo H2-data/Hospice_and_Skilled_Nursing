@@ -85,27 +85,27 @@ I will translate these business questions into more specific data questions:
 
 - What are the distributions of ORGANIZATION_TYPE_STRUCTURE and PROPRIETARY_NONPROFIT structures?
 
-- Which states have the most beneficiary enrollments relative to their populations of Medicare Beneficiaries?
+- Which states have the most beneficiary enrollments relative to their facilities?
 
 ### **Data Reports:**
 
 <table>
   <tr>
-    <img width="1338" height="750" alt="image" src="https://github.com/user-attachments/assets/c36cbaac-31d4-4022-827b-a524dfd6ce35" />
+    <img width="1282" height="717" alt="Screenshot 2026-07-05 142825" src="https://github.com/user-attachments/assets/b22c4592-9e6a-4d3d-bc34-e786b3e3ef5f" />
     <br>
-    <img width="1343" height="752" alt="image" src="https://github.com/user-attachments/assets/35f7fca2-d3fd-4e14-8e46-596d5a8723b1" />
+    <img width="1282" height="717" alt="Screenshot 2026-07-05 142858" src="https://github.com/user-attachments/assets/0dae62cb-d311-4d24-860c-2da05f2f8f66" />
   </tr>
 </table>
 
 To interact with the dashboards and see the data models behind them, see the Power BI section of the project, linked here:
 
-[Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTliNjJlYTQtMDMyMC00OWFjLWI5ZDQtZDkzNGFhOTQwOTliIiwidCI6ImRmZWM4YzJjLThlNWUtNDI4Yy05MmE4LTkzOTI1ZjM3Y2JlYiJ9)
+[Dashboard]()
 
 ___
 
 ## **Data Preprocessing:**
 
-Aside from generic data preprocessing (outlier management, missing values and duplicates) there were a couple of unique challenges to preparing this data. For one thing, one of the datasets needed to be scraped for reference, so I used the following code snippet to scrape it and convert it into a dataframe:
+Aside from generic data preprocessing (outlier management, missing values and duplicates) there was one unique challenge to preparing this data. Most of the datasets came in folders and files, but one of the datasets needed to be scraped for reference, so I used the following code snippet to scrape it and convert it into a dataframe:
 
 ```Python
 url = 'https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population'
@@ -119,26 +119,7 @@ tables = pd.read_html(response.text)
 len(tables)
 ```
 
-The other main challenge is more obvious: There are 3 seperate tables that need to be organized and prepped. I decided to join the Population table and the Beneficiary table with the following code snippet, as they shared a similar structure and can be connected by state abbreviation.
-
-```Python
-df_population = df_pop4.merge(
-    df_bene4,
-    on = 'STATE_ABV',
-    how = 'inner')
-```
-
-The final output for the Population Info table looks like this:
-
-|STATE|STATE\_ABV|POPULATION|TOT\_BENES|
-|---|---|---|---|
-|California|CA|39355309\.0|7130161\.0|
-|Texas|TX|31709821\.0|4921992\.0|
-|Florida|FL|23462518\.0|5249062\.0|
-|New York|NY|20002427\.0|4009232\.0|
-|Pennsylvania|PA|13059432\.0|3006500\.0|
-
-Now I can see the general population and the Medicare beneficiary population side by side. To see each step of the data cleaning process, the data preprocessing section of this project is linked here:
+Other than that, it was fairly straightforward. To see each step of the data cleaning process, the data preprocessing section of this project is linked here:
 
 [Preprocessing](Hospice_+_SNF.ipynb)  
 
@@ -146,7 +127,7 @@ ___
 
 ## **How can I solve the problem?**
 
-My approach is to create a ratio in DAX that shows the states with the highest number of enrollments to 100k Medicare beneficiares. I'll use the Hospice Facility ratio as an example.
+My approach is to create a ratio in DAX that compares the number of facilities to the number of enrollments in each state. If the number is high, that means there's a large disparity between the two. 
 
 ```DAX
 p100k Hospice = 
