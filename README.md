@@ -18,9 +18,11 @@ The data for this project was obtained from the following sources:
 
 [Data Source](https://github.com/H2-data/Hospice_and_Skilled_Nursing_Demand/tree/main/SNF) (SNF)
 
-- 2 **publicly available** datasets containing Hospice Care Facility and Skilled Nursing Facility Monthly Opening records for 2025. It was obtained from the US Data.gov.
+- 2 **publicly available** datasets containing Hospice Care Facility and Skilled Nursing Facility Monthly Opening records for 2025. It was obtained from CMS.Data.gov.
 
-[Data Source]
+[Data Source](https://data.cms.gov/provider-data/dataset/yc9t-dgbk) (Hospice)
+
+[Data Source](https://data.cms.gov/provider-data/dataset/4pq5-n9py) (SNF)
 
 [Datasets]
 
