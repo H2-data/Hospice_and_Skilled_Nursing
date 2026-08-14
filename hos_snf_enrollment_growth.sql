@@ -1,5 +1,6 @@
 -- Active: 1780043201174@@127.0.0.1@3306@hos_snf
 
+-- Here, I will collect percentage growth metrics for the year being tracked by the data.
 WITH hos_growth AS (
 SELECT
 	`ENROLLMENT STATE`,
@@ -15,6 +16,8 @@ SELECT
 	Oct_2025 - Jan_2025 AS raw_growth
  FROM hos_growth
  GROUP BY `ENROLLMENT STATE`;
+
+-- Sanity Check
 
 SELECT
 	`ENROLLMENT STATE`,
