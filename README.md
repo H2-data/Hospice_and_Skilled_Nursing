@@ -42,8 +42,6 @@ The data for this project was obtained from the following sources:
 
 ### **How to Read and Run This Repository:**
 
-- Files are labelled from 01-05. They can be read in numeric order. This README file contains the important points of the analysis, and should be read first.
-
 - To test the code on this project, you will need access to the following resources:
   
   	- Visual Studio Code (Or any other all-inclusive coding environment.)
@@ -62,15 +60,17 @@ The data for this project was obtained from the following sources:
   
 **Step 1.** Plug the CSV file into the python script and run it until you reach the 'Database Creation' section. 
 
-**Step 2.** Once you get to the Database Creation section, you can put the username, password and database name into the SQL alchemy engine object. Then run the code. It should slice the cleaned data into tables and send them to the database. This project does not use any SQL, so you don't need to run anything in the SQL workbench.
+**Step 2.** Once you get to the Database Creation section, you can put the username, password and database name into the SQL alchemy engine object. Then run the code. It should slice the cleaned data into tables and send them to the database.
 
-**Step 3.** Open the Power BI pbix file.
+**Step 3.** Run the SQL code on a MySQL workbench to see the growth rates for enrollments and facilities.
 
-**Step 4.** You need to have an ODBC connector since the code is MySQL. Once you've created the connection object, you can connect the database to Power BI using the Power Query. This should activate the dashboard.
+**Step 4.** Open the Power BI pbix file.
+
+**Step 5.** You need to have an ODBC connector since the code is MySQL. Once you've created the connection object, you can connect the database to Power BI using the Power Query. This should activate the dashboard.
 
 ### **Who is the Project's Intended Recipient?:**
 
-- This project is meant to be recieved and read by the Healthco Medical Solutions expansion project and marketing managers currently looking to open new healthcare facilities across the US. This project will use the aforementioned datasets to find out which states have a high population and a low number of Hospice Care and Skilled Nursing facilities, contributing demand assessment into the decision-making process.
+- This project is meant to be recieved and read by the Healthco Medical Solutions expansion project and marketing managers currently opening new healthcare facilities across the US. This project will use the aforementioned datasets to find out which states have a high population and a low number of Hospice Care and Skilled Nursing facilities, contributing demand assessment to the decision-making process.
 ___
 
 ## **Scenario and Objective:**
@@ -96,12 +96,6 @@ I will translate these business questions into more specific data questions:
     <img width="1162" height="652" alt="Screenshot 2026-08-14 132722" src="https://github.com/user-attachments/assets/6ba8bd72-cc17-4f1d-bdd0-e0c2b74dc9a3" />
   </tr>
 </table>
-
-To interact with the dashboards and see the data models behind them, see the Power BI section of the project, linked here:
-
-[Dashboard]()
-
-___
 
 ## **Data Preprocessing:**
 
