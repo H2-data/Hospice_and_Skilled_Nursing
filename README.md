@@ -97,6 +97,8 @@ I will translate these business questions into more specific data questions:
   </tr>
 </table>
 
+To view and interact with the dashboard, you can view the published version linked [HERE](https://app.powerbi.com/view?r=eyJrIjoiYThlNTI0OTUtNWE5Yy00YjlkLWE0YzgtZDA1OWRjMDE4ZTE0IiwidCI6ImRmZWM4YzJjLThlNWUtNDI4Yy05MmE4LTkzOTI1ZjM3Y2JlYiJ9).
+
 ## **Data Preprocessing:**
 
 Aside from generic data preprocessing (outlier management, missing values and duplicates) there was one unique challenge to preparing this data. Most of the datasets came in folders and files, but one of the datasets needed to be scraped for reference, so I used the following code snippet to scrape it and convert it into a dataframe:
